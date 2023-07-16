@@ -1,0 +1,38 @@
+@import '../base/mixins';
+@import '../components/main-navigation';
+.header {
+    @include blocksPadding;
+    width: 100%;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__company-name {
+        color: #B4387A;
+        font-size: 24px;
+    }
+    // .header__nav
+    &__nav {
+        width: auto;
+        gap: 10px;
+        color: #1D1929;
+    }
+    // .header__lk-button
+    &__lk-button {
+        height: 50px;
+        border-radius: 16px;
+        background-color: blue;
+        @include flexCenter;
+        padding: 8px;
+        border: none;
+        font-family: 'Ubuntu';
+    }
+    // .header_lk-button-text
+    &_lk-button-text {
+        letter-spacing: 1px;
+        color: white;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 500px) {}
