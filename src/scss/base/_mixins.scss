@@ -55,6 +55,21 @@
     padding: 15px 5vw;
 }
 
+@mixin defaultButton {
+    background-color: $button-active-color;
+    @include flexCenter;
+    border: transparent;
+    padding: 8px;
+    font-family: 'Ubuntu';
+    letter-spacing: 1px;
+    color: $white;
+    font-weight: 700;
+    cursor: pointer;
+    &:focus {
+        background-color: $link-hover-color;
+    }
+}
+
 //Placeholders
 //Usage:
 //@include placeholder;

@@ -1,13 +1,21 @@
+@import '../base/vars';
+* {
+    transition: .3s;
+}
+
 body {
-    background-color: #f5f4ff;
+    background-color: $main-backgroud-color;
     font-family: 'Ubuntu';
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
 }
 
 a {
     color: inherit;
+    &:hover,
+    &:focus {
+        color: $link-hover-color;
+    }
 }

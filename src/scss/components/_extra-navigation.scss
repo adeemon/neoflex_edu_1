@@ -1,18 +1,12 @@
-.main-navigation {
-    @include flexCenter;
-    flex-direction: row;
-    gap: 20px;
-    // .main-navigation__element
-    &__element {
-        width: auto;
-    }
-    // .main-navigation__link
+.extra-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-flow: row wrap;
     &__link {
-        width: auto;
-        color: inherit;
-        &:hover,
-        &:focus {
-            color: #B2A35F;
-        }
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Ubuntu';
     }
 }
